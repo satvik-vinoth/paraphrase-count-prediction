@@ -36,3 +36,18 @@ This folder contains Jupyter notebooks used for various stages of the project, i
   - Model performance metrics.
   - Saved plots and predictions.
   - A trained BERT-based regression model.
+ 
+### 4. `EXPERIMENT FOR FILTERING THRESHOLDS.ipynb`
+- **Purpose**:
+  - Evaluates different Levenshtein distance and semantic similarity thresholds to determine their effect on paraphrase filtering.
+  - Uses MiniLM-L12 and MPNet similarity scores, along with keyword-preservation and numerical consistency checks.
+  - Includes manual review of generated paraphrases to assess semantic preservation and meaningful variation.
+- **Inputs**:
+  - Original sentences from the Operating Systems domain.
+  - Paraphrases generated using the PEGASUS model.
+- **Outputs**:
+  - Comparison of paraphrase retention across different threshold configurations.
+  - Excel results containing retention statistics, candidate details, and manual-review fields.
+  - Evidence to support the selection of filtering thresholds for the PARC dataset.
+   
+
